@@ -1,10 +1,10 @@
-package scalajsreact.template.routes
+package scalajsreact.select.example.routes
 
 import japgolly.scalajs.react.ReactElement
 import japgolly.scalajs.react.extra.router.RouterConfigDsl
 
-import scalajsreact.template.components.items.{ItemsInfo, Item1Data, Item2Data}
-import scalajsreact.template.pages.ItemsPage
+import scalajsreact.select.example.components.items.{Item1Data, Item2Data, ItemsInfo}
+import scalajsreact.select.example.pages.ItemsPage
 
 sealed abstract class Item(val title: String,
 val routerPath: String,

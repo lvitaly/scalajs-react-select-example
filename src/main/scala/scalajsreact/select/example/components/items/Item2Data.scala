@@ -1,4 +1,4 @@
-package scalajsreact.template.components.items
+package scalajsreact.select.example.components.items
 
 import japgolly.scalajs.react._
 import japgolly.scalajs.react.vdom.prefix_<^._

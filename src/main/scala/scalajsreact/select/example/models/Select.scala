@@ -1,4 +1,4 @@
-package scalajsreact.template.models
+package scalajsreact.select.example.models
 
 import com.payalabs.scalajs.react.bridge.ReactBridgeComponent
 

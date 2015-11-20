@@ -1,4 +1,4 @@
-package scalajsreact.template.components
+package scalajsreact.select.example.components
 
 import japgolly.scalajs.react._
 import japgolly.scalajs.react.extra.Reusability
@@ -8,7 +8,7 @@ import japgolly.scalajs.react.vdom.prefix_<^._
 import scala.scalajs.js.{Any, UndefOr}
 import scalacss.Defaults._
 import scalacss.ScalaCssReact._
-import scalajsreact.template.routes.Item
+import scalajsreact.select.example.routes.Item
 
 object LeftNav {
 

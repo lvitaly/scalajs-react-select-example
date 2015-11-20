@@ -1,11 +1,10 @@
-package scalajsreact.template.css
+package scalajsreact.select.example.css
 
-import scalajsreact.template.components.{TopNav, LeftNav}
-import scalajsreact.template.pages.{HomePage, ItemsPage}
-
+import scalacss.Defaults._
 import scalacss.ScalaCssReact._
 import scalacss.mutable.GlobalRegistry
-import scalacss.Defaults._
+import scalajsreact.select.example.components.{LeftNav, TopNav}
+import scalajsreact.select.example.pages.{ItemsPage, HomePage}
 
 object AppCSS {
 

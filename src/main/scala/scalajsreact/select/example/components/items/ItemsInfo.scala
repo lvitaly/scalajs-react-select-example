@@ -1,9 +1,9 @@
-package scalajsreact.template.components.items
+package scalajsreact.select.example.components.items
 
-import japgolly.scalajs.react.{ReactComponentB, _}
 import japgolly.scalajs.react.vdom.prefix_<^._
+import japgolly.scalajs.react.{ReactComponentB, _}
 
-import scalajsreact.template.models.Select
+import scalajsreact.select.example.models.Select
 
 import com.payalabs.scalajs.react.bridge._
 

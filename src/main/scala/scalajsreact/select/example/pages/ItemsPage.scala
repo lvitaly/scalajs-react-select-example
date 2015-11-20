@@ -1,4 +1,4 @@
-package scalajsreact.template.pages
+package scalajsreact.select.example.pages
 
 import japgolly.scalajs.react._
 import japgolly.scalajs.react.extra.router.RouterCtl
@@ -6,8 +6,8 @@ import japgolly.scalajs.react.vdom.prefix_<^._
 import scala.scalajs.js
 import scalacss.Defaults._
 import scalacss.ScalaCssReact._
-import scalajsreact.template.components.LeftNav
-import scalajsreact.template.routes.Item
+import scalajsreact.select.example.components.LeftNav
+import scalajsreact.select.example.routes.Item
 
 object ItemsPage {
 

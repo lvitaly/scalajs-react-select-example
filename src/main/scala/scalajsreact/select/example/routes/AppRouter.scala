@@ -1,11 +1,11 @@
-package scalajsreact.template.routes
+package scalajsreact.select.example.routes
 
 import japgolly.scalajs.react.extra.router.{Resolution, RouterConfigDsl, RouterCtl, _}
 import japgolly.scalajs.react.vdom.prefix_<^._
 
-import scalajsreact.template.components.{TopNav, Footer}
-import scalajsreact.template.models.Menu
-import scalajsreact.template.pages.HomePage
+import scalajsreact.select.example.components.{TopNav, Footer}
+import scalajsreact.select.example.models.Menu
+import scalajsreact.select.example.pages.HomePage
 
 object AppRouter {
 

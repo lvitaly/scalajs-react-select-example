@@ -1,6 +1,6 @@
 enablePlugins(ScalaJSPlugin)
 
-name := "scalajs-react-template"
+name := "scalajs-react-select-example"
 
 version := "1.0"
 

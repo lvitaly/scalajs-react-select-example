@@ -1,4 +1,4 @@
-package scalajsreact.template.css
+package scalajsreact.select.example.css
 
 import scalacss.Defaults._
 
