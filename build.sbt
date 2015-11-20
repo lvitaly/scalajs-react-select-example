@@ -6,6 +6,8 @@ version := "1.0"
 
 scalaVersion := "2.11.7"
 
+resolvers += Resolver.sonatypeRepo("snapshots")
+
 
 // create launcher file ( its search for object extends JSApp , make sure there is only one file)
 persistLauncher := true
@@ -16,13 +18,16 @@ val scalaJSReactVersion = "0.10.1"
 
 val scalaCssVersion = "0.3.1"
 
-val reactJSVersion = "0.14.2"
+val reactJSVersion = "0.14.3"
 
 
-libraryDependencies ++= Seq("com.github.japgolly.scalajs-react" %%% "core" % scalaJSReactVersion,
+libraryDependencies ++= Seq(
+  "com.github.japgolly.scalajs-react" %%% "core" % scalaJSReactVersion,
   "com.github.japgolly.scalajs-react" %%% "extra" % scalaJSReactVersion,
   "com.github.japgolly.scalacss" %%% "core" % scalaCssVersion,
-  "com.github.japgolly.scalacss" %%% "ext-react" % scalaCssVersion)
+  "com.github.japgolly.scalacss" %%% "ext-react" % scalaCssVersion,
+  "com.payalabs" %%% "scalajs-react-bridge" % "0.2.0-SNAPSHOT"
+)
 
 
 // React itself
@@ -30,7 +35,8 @@ libraryDependencies ++= Seq("com.github.japgolly.scalajs-react" %%% "core" % sca
 //DOM, which doesn't exist by default in the Rhino runner. To make the DOM available in Rhino
 jsDependencies ++= Seq(
   "org.webjars.npm" % "react"     % reactJSVersion / "react-with-addons.js" commonJSName "React"    minified "react-with-addons.min.js",
-  "org.webjars.npm" % "react-dom" % reactJSVersion / "react-dom.js"         commonJSName "ReactDOM" minified "react-dom.min.js" dependsOn "react-with-addons.js"
+  "org.webjars.npm" % "react-dom" % reactJSVersion / "react-dom.js"         commonJSName "ReactDOM" minified "react-dom.min.js" dependsOn "react-with-addons.js",
+  "org.webjars.npm" % "react-select" % "1.0.0-beta5" / "react-select.js" commonJSName "Select" dependsOn "react-dom.js"
 )
 
 
