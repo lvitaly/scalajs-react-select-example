@@ -12,7 +12,7 @@ object ItemsInfo {
   val component = ReactComponentB.static("ItemsInfo",
     <.div(
       <.div(" Items Root Page  "),
-      Select(name = "Select")()
+      Select()()
     )
   ).buildU
 

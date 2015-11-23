@@ -3,16 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Scalajs-react-template</title>
-    <!-- Include JavaScript dependencies -->
-    <script type="text/javascript" src="js/scalajs-react-select-example-jsdeps.js"></script>
 </head>
-<body>
-
-
-
-<!-- Include Scala.js compiled code -->
-<script type="text/javascript" src="js/scalajs-react-select-example-opt.js"></script>
-<!-- Run JSApp -->
-<script type="text/javascript" src="js/scalajs-react-select-example-launcher.js"></script>
+<body onload="scalajsreact.example.ReactApp().main()">
+    <div id="app-container"></div>
+    <script type="text/javascript" src="./dist/bundle.js"></script>
 </body>
 </html>

@@ -30,16 +30,6 @@ libraryDependencies ++= Seq(
 )
 
 
-// React itself
-//   (react-with-addons.js can be react.js, react.min.js, react-with-addons.min.js)
-//DOM, which doesn't exist by default in the Rhino runner. To make the DOM available in Rhino
-jsDependencies ++= Seq(
-  "org.webjars.npm" % "react"     % reactJSVersion / "react-with-addons.js" commonJSName "React"    minified "react-with-addons.min.js",
-  "org.webjars.npm" % "react-dom" % reactJSVersion / "react-dom.js"         commonJSName "ReactDOM" minified "react-dom.min.js" dependsOn "react-with-addons.js",
-  "org.webjars.npm" % "react-select" % "1.0.0-beta5" / "react-select.js" commonJSName "Select" dependsOn "react-dom.js"
-)
-
-
 // creates single js resource file for easy integration in html page
 skip in packageJSDependencies := false
 
